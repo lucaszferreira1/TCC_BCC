@@ -10,7 +10,7 @@ FPS = 15
 # Load a model
 model = YOLO("yolo11n.yaml")
 model = YOLO("yolo11n.pt")
-model = YOLO("yolo11n.yaml").load("best.pt")
+model = YOLO("yolo11n.yaml").load("runs_pcb/weights/best.pt")
 
 # Initialize video capture
 cap = cv2.VideoCapture(0)
